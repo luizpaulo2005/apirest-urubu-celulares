@@ -1,5 +1,10 @@
 # BackEnd do Trabalho Final
 
+Trabalho feito com:
+
+- Express
+- Sequelize
+
 Disciplinas:
 
 - Gerência e Configuração de Serviços de Internet
