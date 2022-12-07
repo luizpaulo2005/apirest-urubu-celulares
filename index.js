@@ -46,7 +46,7 @@ app.post("/produtos", async function (req, res) {
   }
 });
 
-app.put("/produtos", async function (req, res) {
+app.put("/produtos/:id", async function (req, res) {
   try {
     var atualizar = await produto.update(req.body, {
       where: { id: req.params.id },
@@ -58,7 +58,7 @@ app.put("/produtos", async function (req, res) {
   }
 });
 
-app.delete("/produtos", async function (req, res) {
+app.delete("/produtos/:id", async function (req, res) {
   try {
     var apagar = await produto.destroy({ where: { id: req.params.id } });
     res.json(apagar);
